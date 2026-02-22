@@ -88,8 +88,8 @@ podman run -d \
   --name mysql1 \
   --network mysql-net \
   -e MYSQL_ROOT_PASSWORD=root@123 \
-  -v /tmp/mysql-cluster/mysql1:/var/lib/mysql \
-  -v /tmp/mysql-cluster/mysql1/my.cnf:/etc/mysql/conf.d/my.cnf:Z \
+  -v /tmp/mysqlcluster/mysql1:/var/lib/mysql \
+  -v /tmp/mysqlcluster/mysql1/my.cnf:/etc/mysql/conf.d/my.cnf:Z \
   mysql:8.0
 ```
 
@@ -99,8 +99,8 @@ podman run -d \
   --name mysql2 \
   --network mysql-net \
   -e MYSQL_ROOT_PASSWORD=root@123 \
-  -v /tmp/mysql-cluster/mysql2:/var/lib/mysql \
-  -v /tmp/mysql-cluster/mysql2/my.cnf:/etc/mysql/conf.d/my.cnf:Z \
+  -v /tmp/mysqlcluster/mysql2:/var/lib/mysql \
+  -v /tmp/mysqlcluster/mysql2/my.cnf:/etc/mysql/conf.d/my.cnf:Z \
   mysql:8.0
 ```
 
@@ -110,8 +110,8 @@ podman run -d \
   --name mysql3 \
   --network mysql-net \
   -e MYSQL_ROOT_PASSWORD=root@123 \
-  -v /tmp/mysql-cluster/mysql3:/var/lib/mysql \
-  -v /tmp/mysql-cluster/mysql3/my.cnf:/etc/mysql/conf.d/my.cnf:Z \
+  -v /tmp/mysqlcluster/mysql3:/var/lib/mysql \
+  -v /tmp/mysqlcluster/mysql3/my.cnf:/etc/mysql/conf.d/my.cnf:Z \
   mysql:8.0
 ```
 
