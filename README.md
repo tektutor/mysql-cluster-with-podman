@@ -90,7 +90,7 @@ podman run -d \
   -e MYSQL_ROOT_PASSWORD=root@123 \
   -v ~/mysqlcluster/mysql1:/var/lib/mysql \
   -v ~/mysqlcluster/mysql1/my.cnf:/etc/mysql/conf.d/my.cnf:Z \
-  mysql:8.0
+  bitnamilegacy/mysql:9.4
 ```
 
 ## Create the mysql replica 1 
@@ -101,7 +101,7 @@ podman run -d \
   -e MYSQL_ROOT_PASSWORD=root@123 \
   -v ~/mysqlcluster/mysql2:/var/lib/mysql \
   -v ~/mysqlcluster/mysql2/my.cnf:/etc/mysql/conf.d/my.cnf:Z \
-  mysql:8.0
+  bitnamilegacy/mysql:9.4
 ```
 
 ## Create the mysql replica 2
@@ -112,7 +112,7 @@ podman run -d \
   -e MYSQL_ROOT_PASSWORD=root@123 \
   -v ~/mysqlcluster/mysql3:/var/lib/mysql \
   -v ~/mysqlcluster/mysql3/my.cnf:/etc/mysql/conf.d/my.cnf:Z \
-  mysql:8.0
+  bitnamilegacy/mysql:9.4
 ```
 
 ## Connect to primary mysql master ie. mysql1
